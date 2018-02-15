@@ -1,0 +1,14 @@
+TODO IntelliJ code generation examples
+TODO IntelliJ code folding examples
+TODO IntelliJ plugin for Kotlin-ising your code
+
+TODO copy examples into project
+TODO examples for Java 7
+
+TODO Structure talk
+
+TODO slide animation to show how language features reduce boilerplate
+
+TODO learn Kotlin!!!
+TODO watch Hadi's talk
+
