@@ -15,6 +15,8 @@ public class NullHandling {
                 }
             }
         }
+
+        //TODO: Add Optional example
     }
 
     public static class CustomerJava {
