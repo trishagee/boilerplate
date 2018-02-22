@@ -1,7 +1,11 @@
 package com.mechanitis.demo.boilerplate.example6;
 
+import java.util.function.BiConsumer;
+
 public class Lambdas {
-    //I don't think this is right
+    final static RequestJava request = null;
+    final static ResponseJava response = null;
+    //This is example is about declaration, creating a method that takes a lambda expression
 
     @FunctionalInterface
     public interface RouteHandlerJava {
@@ -9,10 +13,14 @@ public class Lambdas {
     }
 
     private static void get(final String path, final RouteHandlerJava handler) {
-        final RequestJava request = null;
-        final ResponseJava response = null;
         handler.handle(request, response);
     }
+
+    //a better approach
+//    private void get(String path, BiConsumer<RequestJava, ResponseJava> handler) {
+//        handler.accept(request, response);
+//    }
+
     public static void main(String[] args) {
         get("/home", (request, response) -> {/*do something */} );
     }

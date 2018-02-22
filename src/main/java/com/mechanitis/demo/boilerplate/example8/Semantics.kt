@@ -3,6 +3,7 @@ package com.mechanitis.demo.boilerplate.example8
 import com.mechanitis.demo.boilerplate.example3.CustomerKotlin
 
 // first
+// type aliases show intent.
 typealias CustomerName = String
 data class Customer(val name: CustomerName, val email: String)
 

@@ -14,7 +14,7 @@ public class ExtendingTypes {
 }
 
 
-public class StringUtils {
+class StringUtils {
     public static String toTitleCase(String value) {
         //do something
         return null;
