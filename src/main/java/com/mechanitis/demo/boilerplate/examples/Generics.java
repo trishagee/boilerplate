@@ -13,5 +13,8 @@ public class Generics {
         //Java 7
         Map<Integer, Customer> customers2 = new HashMap<>();
 
+        //Java 10
+        var customers3 = new HashMap<Integer, Customer>();
+        var customers4 = new HashMap<>();
     }
 }

@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_PARAMETER", "UNUSED_VARIABLE", "unused")
+
 package com.mechanitis.demo.boilerplate.example7
 
 import com.mechanitis.demo.boilerplate.example3.CustomerKotlin

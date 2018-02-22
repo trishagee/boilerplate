@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_PARAMETER", "UNUSED_VARIABLE", "unused", "UNUSED_ANONYMOUS_PARAMETER")
+
 package com.mechanitis.demo.boilerplate.example6
 
 fun get(path: String, handler: (RequestKotlin, ResponseKotlin) -> Unit) {
