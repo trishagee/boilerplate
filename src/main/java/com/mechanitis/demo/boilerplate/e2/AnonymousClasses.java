@@ -1,20 +1,20 @@
 package com.mechanitis.demo.boilerplate.e2;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 @SuppressWarnings("ALL")
 public class AnonymousClasses {
 
 
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1, 2, 3);
+        AbstractButton button = new JButton("Push Me!");
 
-        list.forEach(new Consumer<Integer>() {
+        button.addActionListener(new ActionListener() {
             @Override
-            public void accept(final Integer integer) {
-                System.out.println(integer);
+            public void actionPerformed(final ActionEvent event) {
+                System.out.println("I was pushed, I didn't fall!");
             }
         });
 
