@@ -1,7 +1,10 @@
 package com.mechanitis.demo.boilerplate.example2;
 
+@SuppressWarnings("unused")
 public class Conditional {
+
     void conditional(final int value) {
+
         int actual;
         switch (value) {
             case 1:
