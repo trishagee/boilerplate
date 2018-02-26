@@ -32,7 +32,6 @@ public class Customer {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-
         final Customer customer = (Customer) o;
         if (id != customer.id) {
             return false;
