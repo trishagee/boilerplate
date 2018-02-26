@@ -4,23 +4,34 @@ import com.mechanitis.demo.boilerplate.example3.NullHandling.CustomerJava;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.IntStream;
 
+import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableList;
+import static java.util.List.of;
+import static java.util.stream.IntStream.range;
 
+@SuppressWarnings({"unused", "RedundantExplicitVariableType", "Java9CollectionFactory"})
 public class Collections {
     public static void main(String[] args) {
-        IntStream numbers = IntStream.range(1, 100);
+
+        var numbers = range(1, 100);
 
 
-        List<CustomerJava> customers = Arrays.<CustomerJava>asList(
+        List<CustomerJava> customers1 = Arrays.asList(
                 new CustomerJava(1, "Sam", "Sparks"),
                 new CustomerJava(2, "Pat", "Parks"));
-//        List<CustomerJava> customers2 = unmodifiableList(Arrays.<CustomerJava>asList(
-//                new CustomerJava(1, "Sam", "Sparks"),
-//                new CustomerJava(2, "Pat", "Parks")));
-//        List<CustomerJava> customers3 = List.of(
-//                new CustomerJava(1, "Sam", "Sparks"),
-//                new CustomerJava(2, "Pat", "Parks"));
+
+        List<CustomerJava> customers2 = unmodifiableList(asList(
+                new CustomerJava(1, "Sam", "Sparks"),
+                new CustomerJava(2, "Pat", "Parks")));
+
+        List<CustomerJava> customers3 = List.of(
+                new CustomerJava(1, "Sam", "Sparks"),
+                new CustomerJava(2, "Pat", "Parks"));
+
+        var customers4 = of(
+                new CustomerJava(1, "Sam", "Sparks"),
+                new CustomerJava(2, "Pat", "Parks"));
+
     }
 }

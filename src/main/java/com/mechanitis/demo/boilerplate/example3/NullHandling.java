@@ -2,6 +2,7 @@ package com.mechanitis.demo.boilerplate.example3;
 
 @SuppressWarnings("unused")
 public class NullHandling {
+
     public void validateCustomer(CustomerJava customer) throws SecurityException {
         if (customer != null) {
             if (customer.getName() != null) {
@@ -9,14 +10,7 @@ public class NullHandling {
                     throw new SecurityException("Names are not allowed to begin with A");
                 }
             }
-            if (customer.getEmail() != null) {
-                if (!customer.getEmail().contains("@gmail.com")) {
-                    throw new SecurityException("Only GMail emails are allowed");
-                }
-            }
         }
-
-        //TODO: Add Optional example
     }
 
     public static class CustomerJava {

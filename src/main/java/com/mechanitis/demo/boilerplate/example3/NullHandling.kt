@@ -10,7 +10,8 @@ fun validateCustomerNullSafe(customer: CustomerKotlin) {
 }
 
 @Suppress("unused")
-fun validateJavaCustomerWithNulls(customer: CustomerJava?) {
+// TODO this needs a test for the equality operator.  == or ===?
+fun validateCustomerWithNulls(customer: CustomerJava?) {
     if (customer?.name?.startsWith("A") == true) {
         throw Exception("Names are not allowed to start with A")
     }
