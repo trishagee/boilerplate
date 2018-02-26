@@ -6,8 +6,8 @@ import com.mechanitis.demo.boilerplate.example3.CustomerKotlin
 import com.mechanitis.demo.boilerplate.example7.UsingLambdas.View
 
 val customers = listOf(
-        CustomerKotlin(1, "Sam", "Sparks"),
-        CustomerKotlin(2, "Pat", "Parks"))
+        CustomerKotlin(1, "Sam", "Sparks", "email"),
+        CustomerKotlin(2, "Pat", "Parks", "email"))
 
 
 fun usingLambdas() {

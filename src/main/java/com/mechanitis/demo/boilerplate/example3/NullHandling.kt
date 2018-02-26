@@ -17,6 +17,6 @@ fun validateCustomerWithNulls(customer: CustomerJava?) {
     }
 }
 
-class CustomerKotlin(val id: Int, var name: String, val surname: String) {
+class CustomerKotlin(val id: Int, var name: String, val surname: String, val email: String) {
 
 }

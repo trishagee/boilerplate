@@ -4,6 +4,7 @@ import com.mechanitis.demo.boilerplate.example3.NullHandling.CustomerJava;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableList;
@@ -32,6 +33,13 @@ public class Collections {
         var customers4 = of(
                 new CustomerJava(1, "Sam", "Sparks"),
                 new CustomerJava(2, "Pat", "Parks"));
+
+        //TODO streams
+
+        List<String> emails = customers4.stream()
+                              .filter(customer -> customer.getName().startsWith("A"))
+                              .map(CustomerJava::getEmail)
+                              .collect(Collectors.toList());
 
     }
 }

@@ -21,7 +21,7 @@ val customer = Customer("Joe Smith", "joe@gmail.com")
 class Example3 {
     // third
     fun third() {
-        val mary = CustomerKotlin(1, "Mary Smith", "Mary.Smith@somewhere.com")
+//        val mary = CustomerKotlin(1, "Mary Smith", "Mary.Smith@somewhere.com")
 //        val (id, name, email) = CustomerKotlin(1, "Mary Smith", "Mary.Smith@somewhere.com")
 //        val (_, _, contact_email) = CustomerKotlin(1, "Mary Smith", "Mary.Smith@somewhere.com")
     }
