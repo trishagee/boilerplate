@@ -2,16 +2,16 @@
 
 package com.mechanitis.demo.boilerplate.example6
 
-val request = null
-val response = null
+//val request = RequestKotlin
+//val response = ResponseKotlin
 
-fun main() {
-    get("/home") { request, response -> /*do something */ }
-}
+    fun main(args: Array<String>) {
+        get("/home") { request, response -> /*do something */ }
+    }
 
-fun get(path: String, handler: (RequestKotlin, ResponseKotlin) -> Unit) {
-//    handler.invoke(request, response)
-}
+    fun get(path: String, handler: (RequestKotlin, ResponseKotlin) -> Unit) {
+//        handler(request, response)
+    }
 
 class RequestKotlin
 class ResponseKotlin

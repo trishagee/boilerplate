@@ -12,10 +12,15 @@ val customers = listOf(
         CustomerKotlin(2, "Pat", "Parks", "email"))
 
 
-val emails = customers
-        .filter({ customer -> customer.name.startsWith("A") })
-        .map({ customer -> customer.email })
+//val emails = customers
+//        .filter { it.name.startsWith("A") }
+//        .map { it.email }
+
+    val email = customers.asSequence()
+            .filter { it.name.startsWith("S") }
+            .map { it.email }
+            .toList()
 
 fun main(args: Array<String>) {
-    println(emails)
+    println(email)
 }
