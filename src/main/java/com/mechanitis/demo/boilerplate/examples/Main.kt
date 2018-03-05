@@ -8,7 +8,7 @@ import java.util.HashMap
 fun main(args: Array<String>) {
     println("Hello")
 
-    val customers1 = HashMap<Int, Customer>()
+    var customers1 = HashMap<Int, Customer>()
 
 
 }

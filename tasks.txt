@@ -22,3 +22,5 @@ DONE
  - copy examples into project
 
 
+TODO: Slide 36 params are final in one slide and not in the other
+TODO: Switch example

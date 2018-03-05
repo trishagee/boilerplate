@@ -13,6 +13,7 @@ public class Generics {
         Map<Integer, Customer> customers1 = new HashMap<Integer, Customer>();
 
         //Java 7
+
         Map<Integer, Customer> customers2 = new HashMap<>();
 
         //Java 10
