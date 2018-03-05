@@ -21,6 +21,6 @@ fun usingLambdas() {
 }
 
 fun higherOrder(function: (Int, Int) -> Unit) {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    //To change body of created functions use File | Settings | File Templates.
 }
 
