@@ -1,4 +1,4 @@
-package com.mechanitis.demo.boilerplate.e2
+package com.mechanitis.demo.boilerplate.examples
 
 import javax.swing.JButton
 
