@@ -3,27 +3,35 @@ package com.mechanitis.demo.boilerplate.example2;
 @SuppressWarnings("unused")
 public class Conditional {
 
-    void conditional(final int value) {
+    PortType getPortType(final String portInputValue) {
 
-        int actual;
-        switch (value) {
-            case 1:
-                System.out.println("It was one");
-                actual = 20;
+        int port = Integer.valueOf(portInputValue);
+        PortType type = PortType.UNKNOWN;
+        switch (port) {
+            case 20:
+                type = PortType.FTP;
                 break;
-            case 2:
-                System.out.println("It was two");
-                actual = 30;
+            case 80:
+                type = PortType.HTTP;
+                break;
+            case 8080:
+                type = PortType.HTTP;
+                break;
+            case 27017:
+                type = PortType.DATABASE;
                 break;
             default:
-                if (value >= 0 && value <= 100) {
-                    actual = 40;
-                    System.out.println("It was somewhere in between these numbers");
-                } else {
-                    actual = 0;
+                if (port >= 20_001 && port <= 30_000) {
+                    type = PortType.SAFE;
+                } else if (port >= 9080 && port <= 9092) {
+                    type = PortType.BUSY;
                 }
         }
-        System.out.format("Value is %d and Actual is %d", value, actual);
 
+        return type;
+    }
+
+    public enum PortType {
+        HTTP, DATABASE, UNUSED, UNKNOWN, FTP, BUSY, SAFE;
     }
 }
