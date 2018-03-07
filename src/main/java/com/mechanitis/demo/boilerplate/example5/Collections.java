@@ -2,6 +2,7 @@ package com.mechanitis.demo.boilerplate.example5;
 
 import com.mechanitis.demo.boilerplate.example3.NullHandling.CustomerJava;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,7 +12,8 @@ import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableList;
 import static java.util.List.of;
 
-@SuppressWarnings({"unused", "RedundantExplicitVariableType", "Java9CollectionFactory"})
+@SuppressWarnings({"unused", "RedundantExplicitVariableType", "Java9CollectionFactory",
+        "MismatchedQueryAndUpdateOfCollection"})
 public class Collections {
     public static void main(String[] args) {
 
@@ -33,8 +35,6 @@ public class Collections {
         var customers4 = of(
                 new CustomerJava(1, "Sam", "Sparks"),
                 new CustomerJava(2, "Pat", "Parks"));
-
-        //TODO streams
 
         List<String> emails = customers4.stream()
                               .filter(customer -> customer.getName().startsWith("A"))
