@@ -5,6 +5,8 @@ import com.mechanitis.demo.boilerplate.example8.Customer;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.mechanitis.demo.boilerplate.examples.CustomerFactory.create;
+
 @SuppressWarnings({"Convert2Diamond", "unused"})
 public class Generics {
     public static void main(String[] args) {
@@ -22,5 +24,13 @@ public class Generics {
 
 
         var customers4 = new HashMap<>();
+
+
+        var c = create("Sam");
+
+        if (c != null) {
+
+        }
     }
+
 }
